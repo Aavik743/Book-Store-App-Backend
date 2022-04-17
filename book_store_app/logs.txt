@@ -1,0 +1,35 @@
+2022-04-16 10:37:27 INFO- * Restarting with stat
+2022-04-16 10:37:28 WARNING- * Debugger is active!
+2022-04-16 10:37:28 INFO- * Debugger PIN: 101-980-992
+2022-04-16 10:37:28 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-16 10:39:05 INFO- * Restarting with stat
+2022-04-16 10:39:06 WARNING- * Debugger is active!
+2022-04-16 10:39:06 INFO- * Debugger PIN: 101-980-992
+2022-04-16 10:39:06 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-16 10:48:45 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\db\\connector.py', reloading
+2022-04-16 10:48:46 INFO- * Restarting with stat
+2022-04-16 10:48:46 WARNING- * Debugger is active!
+2022-04-16 10:48:46 INFO- * Debugger PIN: 101-980-992
+2022-04-16 10:48:46 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-16 10:50:47 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\models.py', reloading
+2022-04-16 10:50:48 INFO- * Restarting with stat
+2022-04-16 10:50:48 WARNING- * Debugger is active!
+2022-04-16 10:50:48 INFO- * Debugger PIN: 101-980-992
+2022-04-16 10:50:48 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-17 23:34:05 INFO- * Restarting with stat
+2022-04-17 23:34:05 WARNING- * Debugger is active!
+2022-04-17 23:34:05 INFO- * Debugger PIN: 101-980-992
+2022-04-17 23:34:06 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-17 23:39:50 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\models.py', reloading
+2022-04-17 23:39:50 INFO- * Restarting with stat
+2022-04-17 23:44:28 INFO- * Restarting with stat
+2022-04-17 23:44:30 WARNING- * Debugger is active!
+2022-04-17 23:44:30 INFO- * Debugger PIN: 101-980-992
+2022-04-17 23:44:30 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-17 23:48:57 INFO-127.0.0.1 - - [17/Apr/2022 23:48:57] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2022-04-17 23:51:26 INFO-127.0.0.1 - - [17/Apr/2022 23:51:26] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2022-04-17 23:52:39 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-17 23:52:39 INFO- * Restarting with stat
+2022-04-17 23:52:40 WARNING- * Debugger is active!
+2022-04-17 23:52:40 INFO- * Debugger PIN: 101-980-992
+2022-04-17 23:52:40 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

@@ -1,4 +1,4 @@
-from mongoengine import Document, StringField, EmailField, BooleanField, SequenceField
+from mongoengine import Document, StringField, EmailField, SequenceField, BooleanField, IntField
 
 
 class Users(Document):
@@ -7,13 +7,21 @@ class Users(Document):
     username = StringField()
     password = StringField()
     email_id = EmailField()
+    address = StringField()
+    pincode = IntField()
+    is_verified = BooleanField(default=False)
+    is_admin = BooleanField(default=False)
 
     def to_dict(self):
         user_dict = {
             'name': self.name,
             'username': self.username,
+            'password': self.password,
             'email_id': self.email_id,
-            'password': self.password
+            'address': self.address,
+            'pincode': self.pincode,
+            'is_verified': self.is_verified,
+            'is_admin': self.is_admin
         }
         return user_dict
 
