@@ -155,3 +155,78 @@
 2022-04-18 19:30:03 INFO- * Debugger PIN: 101-980-992
 2022-04-18 19:30:04 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2022-04-18 19:30:19 INFO-127.0.0.1 - - [18/Apr/2022 19:30:19] "GET /verification HTTP/1.1" 200 -
+2022-04-18 19:46:36 INFO- * Restarting with stat
+2022-04-18 19:46:36 WARNING- * Debugger is active!
+2022-04-18 19:46:36 INFO- * Debugger PIN: 101-980-992
+2022-04-18 19:46:36 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:49:06 INFO- * Restarting with stat
+2022-04-19 00:49:06 WARNING- * Debugger is active!
+2022-04-19 00:49:06 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:49:06 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:49:56 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:49:56 INFO- * Restarting with stat
+2022-04-19 00:49:57 WARNING- * Debugger is active!
+2022-04-19 00:49:57 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:49:57 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:50:10 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:50:10 INFO- * Restarting with stat
+2022-04-19 00:50:10 WARNING- * Debugger is active!
+2022-04-19 00:50:10 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:50:11 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:50:30 INFO-127.0.0.1 - - [19/Apr/2022 00:50:30] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:51:49 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:51:49 INFO- * Restarting with stat
+2022-04-19 00:51:50 WARNING- * Debugger is active!
+2022-04-19 00:51:50 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:51:50 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:51:51 INFO-127.0.0.1 - - [19/Apr/2022 00:51:51] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:52:10 INFO-127.0.0.1 - - [19/Apr/2022 00:52:10] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:54:40 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:54:40 INFO- * Restarting with stat
+2022-04-19 00:54:41 WARNING- * Debugger is active!
+2022-04-19 00:54:41 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:54:41 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:54:42 INFO-127.0.0.1 - - [19/Apr/2022 00:54:42] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:54:45 INFO-127.0.0.1 - - [19/Apr/2022 00:54:45] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:54:47 INFO-127.0.0.1 - - [19/Apr/2022 00:54:47] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:54:47 INFO-127.0.0.1 - - [19/Apr/2022 00:54:47] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:55:31 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:55:32 INFO- * Restarting with stat
+2022-04-19 00:55:32 WARNING- * Debugger is active!
+2022-04-19 00:55:32 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:55:32 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 00:55:43 INFO-127.0.0.1 - - [19/Apr/2022 00:55:43] "POST /register HTTP/1.1" 200 -
+2022-04-19 00:56:05 INFO-127.0.0.1 - - [19/Apr/2022 00:56:05] "POST /login HTTP/1.1" 200 -
+2022-04-19 00:59:32 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 00:59:33 INFO- * Restarting with stat
+2022-04-19 00:59:33 WARNING- * Debugger is active!
+2022-04-19 00:59:33 INFO- * Debugger PIN: 101-980-992
+2022-04-19 00:59:33 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:06:22 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 01:06:23 INFO- * Restarting with stat
+2022-04-19 01:06:24 WARNING- * Debugger is active!
+2022-04-19 01:06:24 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:06:24 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:06:54 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 01:06:54 INFO- * Restarting with stat
+2022-04-19 01:06:55 WARNING- * Debugger is active!
+2022-04-19 01:06:55 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:06:55 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:07:54 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\apis.py', reloading
+2022-04-19 01:07:54 INFO- * Restarting with stat
+2022-04-19 01:07:55 WARNING- * Debugger is active!
+2022-04-19 01:07:55 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:07:55 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:09:46 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\__init__.py', reloading
+2022-04-19 01:09:46 INFO- * Restarting with stat
+2022-04-19 01:09:47 WARNING- * Debugger is active!
+2022-04-19 01:09:47 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:09:47 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:11:16 INFO-127.0.0.1 - - [19/Apr/2022 01:11:16] "POST /login HTTP/1.1" 200 -
+2022-04-19 01:11:31 INFO-127.0.0.1 - - [19/Apr/2022 01:11:31] "[35m[1mGET /resetpassword HTTP/1.1[0m" 500 -
+2022-04-19 01:16:40 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\common\\utils.py', reloading
+2022-04-19 01:16:40 INFO- * Restarting with stat
+2022-04-19 01:16:41 WARNING- * Debugger is active!
+2022-04-19 01:16:41 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:16:41 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-19 01:16:42 INFO-127.0.0.1 - - [19/Apr/2022 01:16:42] "GET /resetpassword HTTP/1.1" 200 -

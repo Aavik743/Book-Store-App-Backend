@@ -22,6 +22,13 @@ def generate_token(otp, user_id):
     return token
 
 
+def access_token(user_id):
+    token = jwt.encode(
+        {'user_id': user_id, 'Exp': str(datetime.datetime.utcnow() + datetime.timedelta(seconds=60000000))},
+        str(os.environ.get('SECRET_KEY')))
+    return token
+
+
 def jwt_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
@@ -38,6 +45,26 @@ def jwt_required(f):
             return {'Error': str(e), 'code': 409}
 
         return f(data['otp'], data['user_id'])
+
+    return decorated
+
+
+def JWT_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if 'access-token' in request.headers:
+            short_token = request.headers.get('access-token')
+        else:
+            short_token = request.args.get('token')
+        token = get_real_token(short_token)
+        if not token:
+            return {'Message': 'Token is missing!', 'code': 409}
+        try:
+            data = jwt.decode(token, str(os.environ.get('SECRET_KEY')), algorithms=["HS256"])
+        except Exception as e:
+            return {'Error': str(e), 'code': 409}
+
+        return f(data['user_id'])
 
     return decorated
 

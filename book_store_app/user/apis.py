@@ -4,8 +4,8 @@ from flask import request, render_template
 from flask_restful import Resource
 
 from common import logger
-from common.exception import NotUniqueException, NotMatchingException
-from common.utils import send_mail, generate_otp, generate_token, get_short_token, jwt_required
+from common.exception import NotUniqueException, NotMatchingException, NotFoundException
+from common.utils import send_mail, access_token,JWT_required, generate_otp, generate_token, get_short_token, jwt_required
 from .models import Users
 
 
@@ -65,9 +65,83 @@ class Verification_API(Resource):
             user['is_verified'] = True
             user.save()
             return {"message": "Your account is now verified", 'status code': 200}
+        except NotMatchingException as e:
+            logger.logging.error('Log Error Message')
+            return e.__dict__
+        except Exception:
+            logger.logging.error('Log Error Message')
+            return {'Error': 'Something went wrong', 'status code': 500}
+
+
+class Login_API(Resource):
+    def post(self):
+        """
+            This API is used to authenticate user to access resources
+            @param request: user credential like username and password
+            @return: Returns success message and access token on successful login
+        """
+        data = json.loads(request.data)
+        username = data.get('username')
+        password = data.get('password')
+        user = Users.objects.get(username=username)
+        if not user.is_verified:
+            return {
+                'Error': 'Account is not verified', 'status code': 400
+            }
+        try:
+            if password != user.password:
+                raise NotMatchingException('password does not match', 400)
+            if password == user.password:
+                token = get_short_token(access_token(user.id))
+                return {
+                    'message': 'Logged in as {}'.format(data['username']),
+                    'access_token': token
+                }
+        except NotMatchingException as e:
+            logger.logging.error('Log Error Message')
+            return e.__dict__
+        except Exception:
+            logger.logging.error('Log Error Message')
+            return {'Error': 'Something went wrong', 'status code': 500}
+
+
+class Reset_Password_API(Resource):
+    method_decorators = {'get': [JWT_required]}
+
+    def get(self, decoded_data):
+        """
+            This API accepts the changes the current password
+            @param : current password and new password
+            @return: success message and new password
+        """
+        data = json.loads(request.data)
+        password = data.get('password')
+        password1 = data.get('password1')
+        password2 = data.get('password2')
+
+        user = Users.objects.get(id=decoded_data)
+        try:
+            if user.password != password:
+                raise NotFoundException('password does not match', 400)
+            if password1 != password2:
+                raise NotMatchingException('new passwords does not match', 400)
+            if user.password == password:
+                if password1 == password2:
+                    user.password = password1
+                    user.save()
+                    return {"message": "new password created", "new password": user.password, 'status code': 200}
+                else:
+                    logger.logging.warning('Log Error Message')
+                    return {"Error": 'new password does not match', 'code': 400}
+            else:
+                logger.logging.warning('Log Error Message')
+                return {"Error": 'password does not match', 'code': 400}
+        except NotFoundException as exception:
+            logger.logging.error('Log Error Message')
+            return exception.__dict__
         except NotMatchingException as exception:
             logger.logging.error('Log Error Message')
             return exception.__dict__
-        except Exception:
+        except:
             logger.logging.error('Log Error Message')
             return {'Error': 'Something went wrong', 'status code': 500}
