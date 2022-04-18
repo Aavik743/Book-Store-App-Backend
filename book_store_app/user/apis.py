@@ -5,7 +5,8 @@ from flask_restful import Resource
 
 from common import logger
 from common.exception import NotUniqueException, NotMatchingException, NotFoundException
-from common.utils import send_mail, access_token,JWT_required, generate_otp, generate_token, get_short_token, jwt_required
+from common.utils import send_mail, access_token, JWT_required, generate_otp, generate_token, get_short_token, \
+    jwt_required
 from .models import Users
 
 
@@ -145,3 +146,31 @@ class Reset_Password_API(Resource):
         except:
             logger.logging.error('Log Error Message')
             return {'Error': 'Something went wrong', 'status code': 500}
+
+
+class Forgot_Pass_API(Resource):
+    def get(self):
+        """
+            This API accepts the get request hit from the email on clicked on link
+            @param : email and token
+            @return: success message
+        """
+        data = json.loads(request.data)
+        email_id = data.get('email_id')
+        user = Users.objects.get(email_id=email_id)
+        try:
+            if not user:
+                raise NotFoundException('account not available', 400)
+            forgot_password_url = get_short_token(access_token(user.id))
+            if user:
+                template = render_template('forgotpassword.html', url=forgot_password_url)
+                send_mail(email_id, template)
+
+                return {"message": "forgot password link sent", 'status code': 200}
+
+        except NotFoundException as e:
+            logger.logging.error('Log Error Message')
+            return e.__dict__
+        except Exception as e:
+            logger.logging.error('Log Error Message')
+            return {'error': e, 'status code': 400}
