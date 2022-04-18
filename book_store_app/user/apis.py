@@ -148,7 +148,7 @@ class Reset_Password_API(Resource):
             return {'Error': 'Something went wrong', 'status code': 500}
 
 
-class Forgot_Pass_API(Resource):
+class Forgot_Password_API(Resource):
     def get(self):
         """
             This API accepts the get request hit from the email on clicked on link

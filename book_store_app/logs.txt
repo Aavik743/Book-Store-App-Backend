@@ -246,3 +246,8 @@
 2022-04-19 01:41:04 INFO- * Debugger PIN: 101-980-992
 2022-04-19 01:41:04 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2022-04-19 01:41:19 INFO-127.0.0.1 - - [19/Apr/2022 01:41:19] "GET /forgot HTTP/1.1" 200 -
+2022-04-19 01:44:37 INFO- * Detected change in 'C:\\Users\\The Lie Lama\\PycharmProjects\\BookStoreApp\\book_store_app\\user\\__init__.py', reloading
+2022-04-19 01:44:37 INFO- * Restarting with stat
+2022-04-19 01:44:38 WARNING- * Debugger is active!
+2022-04-19 01:44:38 INFO- * Debugger PIN: 101-980-992
+2022-04-19 01:44:38 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
