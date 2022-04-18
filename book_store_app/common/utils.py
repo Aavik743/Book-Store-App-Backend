@@ -22,7 +22,7 @@ def generate_token(otp, user_id):
     return token
 
 
-def token_required(f):
+def jwt_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         if 'access-token' in request.headers:
